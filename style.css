@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#box h1{
+    top: 150px;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+}
+#box button{
+    position: absolute;
+    bottom: 150px;
+    outline: none;
+    border: 3px solid red;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color:white;
+    font-size: 20px;
+    background-color: red;
+}
+#box button:hover{
+    color: red;
+    background-color:black;
+    border: 3px solid red;
+    transition: all 0.7s ease;
+}
+#box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box1 h2{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: yellow;
+    color: orangered;
+}
+#box1 i{
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+}
+@media(max-width:391px){
+    #box1{
+        flex-direction: column;
+    }
+    #box1 i{
+        padding-top: 20px;
+    }
+    #box h1{
+        top: 100px;
+    }
+    #box button{
+        font-size: 15px;
+        padding: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media(max-width:347px){
+    #box1 h2{
+        width:200px;
+        font-size: 20px;
+        height: 23px;
+    }
+}
